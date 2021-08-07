@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiendaXDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+       .navbar-nav {/*menú barra nav negra*/
+          margin-left: 300px;
+          @media (max-width: 576px) {/*al reducir a pantalla sm*/
+          a img {
+            width: 30%;
+            margin-left: 10px;
+          }
+        }
+        }
+      .flex-container {
+        display: flex;
+        background: bisque;
+        flex-direction: row;
+      }
+      .flex-container div {
+        background: brown;
+        margin: 50px;
+        color: white;
+        width: 1000px;
+      }
+      @media (max-width: 576px) {
+        .flex-container {
+          flex-direction: column-reverse;
+        }
+      }
+
+    </style>
+</head>
+<body>
+
+    
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div>XDA</div>
+          <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarTogglerDemo03" 
+          aria-controls="navbarTogglerDemo03" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mujer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hombre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accesorios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      
+    <nav></nav>
+    <header>
+      <div class="flex-container">
+        <div>
+          <section>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium dolorum et minima. Possimus qui debitis totam nemo architecto atque.</p>
+            <button>ir a tienda</button>
+        </section>
+        </div>
+        <div>
+          <section>
+            <img src="/img/imagen1.png" alt="foto">
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <div class="d-flex align-items-center">
+      <div class="flex-grow-1 ms-3">
+        This is some content from a media component. You can replace this with any content and adjust it as needed.
+      </div>
+      <div class="flex-shrink-0">
+        <img src="/img/imagen1.png" alt="...">
+      </div>
+
+    </div>
+
+    <footer>
+        <article>
+            <h1>Newsletter</h1>
+            <h6>Correo Electrónico</h6>
+            <form action=""></form>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+        </article>
+        <aside>Suscribir</aside>
+        
+    </footer>
+
+    <!-- 
+        crear menu colapsable usar input checkbox para gatillar bajada de menu en tamaños celular 
+        usar clases BEM
+        clase bloque en seccion newsletter
+        seguido de clases elementos necesarios
+        en ingles
+        usar variables min 7 sass para reutilizar
+        arch reset
+        arch base para typografy
+        repo y git page
+    -->
+    
+</body>
+</html>
