@@ -1,0 +1,70 @@
+      .grid-container {
+            display: grid;                        
+            grid-template-columns: 700px auto auto;  
+            grid-template-rows: auto;
+            gap: 300px;
+        }
+      .foto {
+        grid-column: 2;  
+        grid-row: 1;
+        
+      }
+      .texto {
+        font-size: $large;
+        font-weight: $regular;
+        margin: 40px 200px;
+      }
+      h1 {
+        font-family: $OldStandard;
+        font-weight: $bold;
+        font-size: xxx-large;
+        color: $Smoky-black;
+        
+      }
+        @media screen and (max-width: 767px) {
+            .foto {            
+                /*grid-column: 1 / span 2;*/   
+                grid-column: auto;                
+            }
+            .texto {            
+                grid-column: 1;     
+                grid-row: 3;
+                margin: 20px 250px 20px 40px; 
+                     
+            }
+            .footer__newsletterwsletter {
+              grid-column: 1;
+              
+            }
+            .grid-container {
+              
+              gap: 260px;
+                grid-template-rows: repeat(2, 100px);
+            }
+
+        }
+
+        @media screen and (min-width: 991px) {
+            
+            p::before {
+              content: "Lorem ipsum adipisicing elit. Doloribus accusantium dolorum et minima. Possimus qui debitis totam nemo architecto atque. ";
+            } 
+            .footer {
+              display: grid;                        
+              grid-template-columns: 800px 100px;   
+              margin-top: 20px;
+              
+            }
+            .grid-container {
+              
+              gap: 260px;
+                grid-template-rows: repeat(2, 100px);
+            }
+            .texto {
+              font-size: $medium;
+              font-weight: $regular;
+              margin: 40px 100px;
+            }           
+
+        }
+       

@@ -1,0 +1,133 @@
+/* Manifiesto */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 700px auto auto;
+  grid-template-rows: auto;
+  gap: 300px;
+}
+
+.foto {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.texto {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 200px;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: xxx-large;
+  color: #0C0910;
+}
+
+@media screen and (max-width: 767px) {
+  .foto {
+    /*grid-column: 1 / span 2;*/
+    grid-column: auto;
+  }
+
+  .texto {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 20px 250px 20px 40px;
+  }
+
+  .footer__newsletterwsletter {
+    grid-column: 1;
+  }
+
+  .grid-container {
+    gap: 260px;
+    grid-template-rows: repeat(2, 100px);
+  }
+}
+@media screen and (min-width: 991px) {
+  p::before {
+    content: "Lorem ipsum adipisicing elit. Doloribus accusantium dolorum et minima. Possimus qui debitis totam nemo architecto atque. ";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 800px 100px;
+    margin-top: 20px;
+  }
+
+  .grid-container {
+    gap: 260px;
+    grid-template-rows: repeat(2, 100px);
+  }
+
+  .texto {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 40px 100px;
+  }
+}
+.navbar-nav {
+  margin-left: 1050px;
+  font-weight: 700;
+}
+
+.navbar {
+  background: #FFF;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.xda {
+  font-family: "Old Standard TT", serif;
+  background: #0C0910;
+  padding: 38px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.header__logo {
+  margin-left: 100px;
+  width: 250px;
+  height: 54px;
+}
+
+.footer__newsletter {
+  background: #0C0910;
+  color: #FFF;
+  padding: 40px;
+}
+
+.footer__newsletter h1 {
+  font-size: xx-large;
+  color: #FFF;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 700px auto;
+}
+
+.suscribir {
+  writing-mode: vertical-lr;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

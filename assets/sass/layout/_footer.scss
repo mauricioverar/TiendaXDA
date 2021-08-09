@@ -1,0 +1,13 @@
+.footer__newsletter {
+    background: $Smoky-black;
+    color: $White;
+    padding: 40px;        
+  }
+  .footer__newsletter h1 {
+    font-size: xx-large;
+      color: $White;
+    }
+  .footer {
+    display: grid;                        
+    grid-template-columns: 700px auto;         
+  }
