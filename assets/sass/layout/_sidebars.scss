@@ -1,6 +1,14 @@
 .suscribir {
     writing-mode: vertical-lr;
-    font-weight: bold;
+    font-weight: $bold;
     font-size: $x-large;
     text-align: center;
+    grid-column: 3;
+    font-family: $OldStandard;
+  }
+
+  @media screen and (max-width: 767px) {
+    .suscribir {   
+      grid-column: 10;
+    }
   }
